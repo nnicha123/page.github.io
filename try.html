@@ -28,4 +28,16 @@
     document.body.appendChild(document.createElement("input"));
     let value = document.querySelector("input").value;
     console.log(document.querySelector("input").value)
+
+    // The code to add list when click on button
+    document.querySelector("button").addEventListener("click",function(){
+        var text = prompt("add your text")
+        let id = Math.random()
+        let li = document.createElement("li")
+        li.id = id;
+        // newLi.innerHTML = text
+        document.getElementById(id).innerHTML = text
+        document.querySelector("ol").appendChild(document.getElementById(id))
+})
+
 </script>
