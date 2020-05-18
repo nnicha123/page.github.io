@@ -9,3 +9,13 @@
     
 </body>
 </html>
+<script>
+    document.body.appendChild(document.createElement("h1"));
+    document.getElementsByTagName("h1")[0].id = "idH1";
+    document.getElementsByTagName("h1")[0].className = "h1Class";
+    document.body.appendChild(document.createElement("h1"));
+    // document.querySelector("h1").textContent = "Hello";
+    document.getElementById("idH1").innerHTML = "HELLO WORLD";
+    // Class need to have index to the correct position
+    document.getElementsByClassName("h1Class")[0].innerHTML = "newText";
+</script>
